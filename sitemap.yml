@@ -26,3 +26,12 @@ jobs:
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+    # === ADD THIS STEP BELOW TO SAVE THE FILE ===
+    - name: Commit and Push Sitemap
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@://github.com"
+        git add sitemap.xml
+        # The '|| exit 0' ensures the script won't fail if the sitemap hasn't changed
+        git commit -m "Automated sitemap update" || exit 0
+        git push
