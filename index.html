@@ -12,7 +12,11 @@
     "name": "Harvey Zhuang Qiu",
     "alternateName": [
       "Zhuang Qiu",
-      "Zhuang Harvey Qiu"
+      "Zhuang Harvey Qiu",
+      "Qiu Zhuang",
+      "Harvey Qiu",
+      "Qiu Zhuang Harvey",
+      "Harvey Qiu Zhuang"
     ],
     "url": "https://zhuangharveyqiu.github.io/",
     "jobTitle": "Assistant Professor",
@@ -443,7 +447,7 @@ function App() {
             Harvey Zhuang Qiu
           </h1>
           <p className="fade-up fade-up-delay-1" style={{ color: theme.accent, fontSize: '1rem', marginBottom: 28, fontFamily: "'JetBrains Mono', monospace", fontSize: '0.82rem', letterSpacing: '0.05em' }}>
-            ASSISTANT PROFESSOR · CITY UNIVERSITY OF MACAU
+            Assistant Professor · Hong Kong Baptist University
           </p>
           <p className="fade-up fade-up-delay-2" style={{ lineHeight: 1.85, fontSize: '0.97rem', color: '#2a2a2a', maxWidth: 640 }}>
             My research investigates how large language models (LLMs) and psycholinguistic insights
@@ -455,8 +459,8 @@ function App() {
         {/* News */}
         <Section id="news" title="News & Updates" theme={theme} density={density}>
           {[
+            { date: 'Aug 2026', text: 'Joined Hong Kong Baptist University as an Assistant Professor.' },
             { date: 'Mar 2026', text: 'Invited talk at the 8th International Conference on Natural Language Processing (ICNLP 2026).' },
-            { date: 'Feb 2026', text: 'New book chapter published in <em>Lingua ex machina: AI, Multilingualism, and Interculturality</em> (Routledge).' },
             { date: 'Jan 2026', text: 'Joined the Editorial Board of Springer\'s book series on AI, Intercultural Communication, and Education.' },
             { date: 'Dec 2025', text: 'New article on grammaticality representation in ChatGPT published in <em>Humanities and Social Sciences Communications</em>.' },
           ].map((item, i) => (
@@ -590,9 +594,9 @@ function App() {
         <Section id="contact" title="Contact" theme={theme} density={density}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 440 }}>
             {[
-              { label: 'Email', val: 'zhuangqiu@cityu.edu.mo', href: 'mailto:zhuangqiu@cityu.edu.mo' },
-              { label: 'Institution', val: 'Faculty of Humanities and Social Sciences, City University of Macau' },
-              { label: 'Location', val: 'Macau SAR' },
+              { label: 'Email', val: 'zhuangqiu@hkbu.edu.hk', href: 'mailto:zhuangqiu@hkbu.edu.hk' },
+              { label: 'Institution', val: 'Faculty of Arts and Social Sciences, Hong Kong Baptist University' },
+              { label: 'Location', val: 'Hong Kong SAR' },
 
             ].map(row => (
               <div key={row.label} style={{ display: 'flex', gap: 20, fontSize: '0.9rem', borderBottom: `1px solid ${theme.border}`, paddingBottom: 12 }}>
@@ -617,7 +621,7 @@ function App() {
             ))}
           </div>
           <div style={{ marginTop: 48, paddingTop: 24, borderTop: `1px solid ${theme.border}`, fontSize: '0.75rem', color: '#aaa', fontFamily: 'JetBrains Mono, monospace' }}>
-            © 2026 Harvey Zhuang Qiu · City University of Macau
+            © 2026 Harvey Zhuang Qiu · Hong Kong Baptist University
           </div>
         </Section>
 
